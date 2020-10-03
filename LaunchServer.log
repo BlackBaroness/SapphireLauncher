@@ -1,0 +1,191 @@
+KeeperJerry's LaunchServer v1.6.0 (build #1.6.0, 17.09.2020)
+2020.10.03 09:32:08 [INFO] Setting up server script engine bindings
+2020.10.03 09:32:09 [WARN] JavaFX API isn't available
+2020.10.03 09:32:09 [INFO] JLine2 terminal enabled
+2020.10.03 09:32:09 [INFO] Generating RSA keypair
+2020.10.03 09:32:10 [INFO] Writing RSA keypair files
+2020.10.03 09:32:10 [INFO]  Modulus CRC32: 0x5be481a0
+2020.10.03 09:32:10 [INFO] Creating LaunchServer config
+LaunchServer address: 
+2020.10.03 09:32:14 [INFO] Writing LaunchServer config file
+2020.10.03 09:32:14 [INFO] Reading LaunchServer config file
+2020.10.03 09:32:14 [INFO] Unpacking launcher runtime files
+2020.10.03 09:32:14 [INFO] Syncing launcher binaries
+2020.10.03 09:32:14 [INFO]  Syncing launcher binary file
+2020.10.03 09:32:14 [WARN]  Missing launcher binary file
+2020.10.03 09:32:14 [INFO]  Syncing launcher EXE binary file
+2020.10.03 09:32:14 [WARN]  Missing launcher EXE binary file
+2020.10.03 09:32:14 [INFO] Check updates from KeeperJerry...
+2020.10.03 09:32:15 [INFO] You have the latest version!
+2020.10.03 09:32:15 [INFO] Syncing updates dir
+2020.10.03 09:32:15 [INFO]  Syncing 'jre-8u131-linux64' update dir
+2020.10.03 09:32:17 [INFO]  Syncing 'jre-8u131-win32' update dir
+2020.10.03 09:32:18 [INFO]  Syncing 'jre-8u131-win64' update dir
+2020.10.03 09:32:19 [INFO]  Syncing 'jre-8u131-macosx' update dir
+2020.10.03 09:32:21 [INFO]  Syncing 'jre-8u131-linux32' update dir
+2020.10.03 09:32:25 [INFO] Syncing profiles dir
+2020.10.03 09:32:25 [INFO] Starting server socket thread
+2020.10.03 09:32:25 [INFO] Server socket thread successfully started
+2020.10.03 09:32:29 [INFO] Command 'stop'
+2020.10.03 09:32:29 [INFO] Closing server socket listener
+2020.10.03 09:32:29 [INFO] Writing auth handler file (0 entries)
+2020.10.03 09:32:29 [INFO] LaunchServer stopped
+KeeperJerry's LaunchServer v1.6.0 (build #1.6.0, 17.09.2020)
+2020.10.03 12:34:55 [INFO] Setting up server script engine bindings
+2020.10.03 12:34:56 [WARN] JLine2 isn't in classpath, using std
+2020.10.03 12:34:56 [INFO] Reading RSA keypair
+2020.10.03 12:34:56 [INFO]  Modulus CRC32: 0x5be481a0
+2020.10.03 12:34:56 [INFO] Reading LaunchServer config file
+2020.10.03 12:34:56 [INFO] Reading auth handler file: 'authHandler.cfg'
+2020.10.03 12:34:56 [INFO] Syncing launcher binaries
+2020.10.03 12:34:56 [INFO]  Syncing launcher binary file
+2020.10.03 12:34:56 [WARN]  Missing launcher binary file
+2020.10.03 12:34:56 [INFO]  Syncing launcher EXE binary file
+2020.10.03 12:34:56 [WARN]  Missing launcher EXE binary file
+2020.10.03 12:34:56 [INFO] Check updates from KeeperJerry...
+2020.10.03 12:34:57 [INFO] You have the latest version!
+2020.10.03 12:34:57 [INFO] Syncing updates dir
+2020.10.03 12:34:57 [INFO]  Syncing 'Hardcore' update dir
+2020.10.03 12:35:06 [INFO]  Syncing 'jre-8u202-linux32' update dir
+2020.10.03 12:35:10 [INFO]  Syncing 'jre-8u202-linux64' update dir
+2020.10.03 12:35:14 [INFO]  Syncing 'jre-8u202-macosx' update dir
+2020.10.03 12:35:19 [INFO]  Syncing 'jre-8u202-win32' update dir
+2020.10.03 12:35:24 [INFO]  Syncing 'jre-8u202-win64' update dir
+2020.10.03 12:35:31 [INFO] Syncing profiles dir
+2020.10.03 12:35:31 [INFO]  Syncing 'Hardcore.cfg' profile
+2020.10.03 12:35:31 [INFO] Starting server socket thread
+2020.10.03 12:35:31 [INFO] Server socket thread successfully started
+KeeperJerry's LaunchServer v1.6.0 (build #1.6.0, 17.09.2020)
+2020.10.03 13:12:50 [INFO] Setting up server script engine bindings
+2020.10.03 13:12:51 [INFO] JLine2 terminal enabled
+2020.10.03 13:12:51 [INFO] Reading RSA keypair
+2020.10.03 13:12:51 [INFO]  Modulus CRC32: 0x5be481a0
+2020.10.03 13:12:51 [INFO] Reading LaunchServer config file
+2020.10.03 13:12:51 [INFO] Reading auth handler file: 'authHandler.cfg'
+2020.10.03 13:12:51 [INFO] Syncing launcher binaries
+2020.10.03 13:12:51 [INFO]  Syncing launcher binary file
+2020.10.03 13:12:51 [WARN]  Missing launcher binary file
+2020.10.03 13:12:51 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:12:51 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:12:51 [INFO] Check updates from KeeperJerry...
+2020.10.03 13:12:52 [INFO] You have the latest version!
+2020.10.03 13:12:52 [INFO] Syncing updates dir
+2020.10.03 13:12:52 [INFO]  Syncing 'Hardcore' update dir
+2020.10.03 13:12:56 [INFO]  Syncing 'jre-8u202-linux32' update dir
+2020.10.03 13:12:57 [INFO]  Syncing 'jre-8u202-linux64' update dir
+2020.10.03 13:12:58 [INFO]  Syncing 'jre-8u202-macosx' update dir
+2020.10.03 13:12:59 [INFO]  Syncing 'jre-8u202-win32' update dir
+2020.10.03 13:12:59 [INFO]  Syncing 'jre-8u202-win64' update dir
+2020.10.03 13:13:00 [INFO] Syncing profiles dir
+2020.10.03 13:13:00 [INFO]  Syncing 'Hardcore.cfg' profile
+2020.10.03 13:13:00 [INFO] Starting server socket thread
+2020.10.03 13:13:00 [INFO] Server socket thread successfully started
+2020.10.03 13:13:06 [INFO] Command 'build'
+2020.10.03 13:13:06 [INFO] Building launcher binary file
+2020.10.03 13:13:06 [INFO] Syncing launcher binaries
+2020.10.03 13:13:06 [INFO]  Syncing launcher binary file
+2020.10.03 13:13:06 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:13:06 [WARN]  Missing launcher EXE binary file
+KeeperJerry's LaunchServer v1.6.0 (build #1.6.0, 17.09.2020)
+2020.10.03 13:17:14 [INFO] Setting up server script engine bindings
+2020.10.03 13:17:15 [INFO] JLine2 terminal enabled
+2020.10.03 13:17:15 [INFO] Reading RSA keypair
+2020.10.03 13:17:15 [INFO]  Modulus CRC32: 0x5be481a0
+2020.10.03 13:17:15 [INFO] Reading LaunchServer config file
+2020.10.03 13:17:15 [INFO] Reading auth handler file: 'authHandler.cfg'
+2020.10.03 13:17:15 [INFO] Syncing launcher binaries
+2020.10.03 13:17:15 [INFO]  Syncing launcher binary file
+2020.10.03 13:17:15 [WARN]  Missing launcher binary file
+2020.10.03 13:17:15 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:17:15 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:17:15 [INFO] Check updates from KeeperJerry...
+2020.10.03 13:17:16 [INFO] You have the latest version!
+2020.10.03 13:17:16 [INFO] Syncing updates dir
+2020.10.03 13:17:16 [INFO]  Syncing 'Hardcore' update dir
+2020.10.03 13:17:17 [INFO]  Syncing 'jre-8u202-linux32' update dir
+2020.10.03 13:17:18 [INFO]  Syncing 'jre-8u202-linux64' update dir
+2020.10.03 13:17:19 [INFO]  Syncing 'jre-8u202-macosx' update dir
+2020.10.03 13:17:20 [INFO]  Syncing 'jre-8u202-win32' update dir
+2020.10.03 13:17:21 [INFO]  Syncing 'jre-8u202-win64' update dir
+2020.10.03 13:17:21 [INFO] Syncing profiles dir
+2020.10.03 13:17:21 [INFO]  Syncing 'Hardcore.cfg' profile
+2020.10.03 13:17:21 [INFO] Starting server socket thread
+2020.10.03 13:17:21 [INFO] Server socket thread successfully started
+2020.10.03 13:17:41 [INFO] Command 'build'
+2020.10.03 13:17:41 [INFO] Building launcher binary file
+2020.10.03 13:17:41 [INFO] Syncing launcher binaries
+2020.10.03 13:17:41 [INFO]  Syncing launcher binary file
+2020.10.03 13:17:41 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:17:41 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:23:24 [INFO] Command 'build'
+2020.10.03 13:23:24 [INFO] Building launcher binary file
+2020.10.03 13:23:24 [INFO] Syncing launcher binaries
+2020.10.03 13:23:24 [INFO]  Syncing launcher binary file
+2020.10.03 13:23:24 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:23:24 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:26:03 [INFO] Command 'build'
+2020.10.03 13:26:03 [INFO] Building launcher binary file
+2020.10.03 13:26:03 [INFO] Syncing launcher binaries
+2020.10.03 13:26:03 [INFO]  Syncing launcher binary file
+2020.10.03 13:26:03 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:26:03 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:27:23 [INFO] Command 'build'
+2020.10.03 13:27:23 [INFO] Building launcher binary file
+2020.10.03 13:27:23 [INFO] Syncing launcher binaries
+2020.10.03 13:27:23 [INFO]  Syncing launcher binary file
+2020.10.03 13:27:23 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:27:23 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:28:24 [INFO] Command 'build'
+2020.10.03 13:28:24 [INFO] Building launcher binary file
+2020.10.03 13:28:24 [INFO] Syncing launcher binaries
+2020.10.03 13:28:24 [INFO]  Syncing launcher binary file
+2020.10.03 13:28:24 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:28:24 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:29:20 [INFO] Command 'build'
+2020.10.03 13:29:20 [INFO] Building launcher binary file
+2020.10.03 13:29:20 [INFO] Syncing launcher binaries
+2020.10.03 13:29:20 [INFO]  Syncing launcher binary file
+2020.10.03 13:29:20 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:29:20 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:32:18 [INFO] Command 'build'
+2020.10.03 13:32:18 [INFO] Building launcher binary file
+2020.10.03 13:32:18 [INFO] Syncing launcher binaries
+2020.10.03 13:32:18 [INFO]  Syncing launcher binary file
+2020.10.03 13:32:18 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:32:18 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:44:31 [INFO] Command 'build'
+2020.10.03 13:44:31 [INFO] Building launcher binary file
+2020.10.03 13:44:31 [INFO] Syncing launcher binaries
+2020.10.03 13:44:31 [INFO]  Syncing launcher binary file
+2020.10.03 13:44:31 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:44:31 [WARN]  Missing launcher EXE binary file
+2020.10.03 13:45:22 [INFO] Command 'build'
+2020.10.03 13:45:22 [INFO] Building launcher binary file
+2020.10.03 13:45:22 [INFO] Syncing launcher binaries
+2020.10.03 13:45:22 [INFO]  Syncing launcher binary file
+2020.10.03 13:45:22 [INFO]  Syncing launcher EXE binary file
+2020.10.03 13:45:22 [WARN]  Missing launcher EXE binary file
+2020.10.03 14:00:38 [INFO] Command 'build'
+2020.10.03 14:00:38 [INFO] Building launcher binary file
+2020.10.03 14:00:38 [INFO] Syncing launcher binaries
+2020.10.03 14:00:38 [INFO]  Syncing launcher binary file
+2020.10.03 14:00:38 [INFO]  Syncing launcher EXE binary file
+2020.10.03 14:00:38 [WARN]  Missing launcher EXE binary file
+2020.10.03 14:02:35 [INFO] Command 'build'
+2020.10.03 14:02:35 [INFO] Building launcher binary file
+2020.10.03 14:02:35 [INFO] Syncing launcher binaries
+2020.10.03 14:02:35 [INFO]  Syncing launcher binary file
+2020.10.03 14:02:35 [INFO]  Syncing launcher EXE binary file
+2020.10.03 14:02:35 [WARN]  Missing launcher EXE binary file
+2020.10.03 14:05:16 [INFO] Command 'build'
+2020.10.03 14:05:16 [INFO] Building launcher binary file
+2020.10.03 14:05:16 [INFO] Syncing launcher binaries
+2020.10.03 14:05:16 [INFO]  Syncing launcher binary file
+2020.10.03 14:05:16 [INFO]  Syncing launcher EXE binary file
+2020.10.03 14:05:16 [WARN]  Missing launcher EXE binary file
+2020.10.03 14:06:52 [INFO] Command 'build'
+2020.10.03 14:06:52 [INFO] Building launcher binary file
+2020.10.03 14:06:52 [INFO] Syncing launcher binaries
+2020.10.03 14:06:52 [INFO]  Syncing launcher binary file
+2020.10.03 14:06:52 [INFO]  Syncing launcher EXE binary file
+2020.10.03 14:06:52 [WARN]  Missing launcher EXE binary file
