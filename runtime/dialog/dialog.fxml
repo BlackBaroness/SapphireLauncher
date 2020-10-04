@@ -23,10 +23,10 @@
    </ImageView>
 
     <!-- News web view -->
-    <WebView fx:id="news" layoutX="227.0" layoutY="-2.0" opacity="0.64" prefHeight="550.0" prefWidth="774.0" />
+    <WebView fx:id="news" layoutX="218.0" opacity="0.64" prefHeight="549.0" prefWidth="782.0" />
 
     <!-- Auth pane -->
-    <Pane fx:id="authPane" layoutX="11.0" layoutY="64.0" prefHeight="400.0" prefWidth="207.0">
+    <Pane fx:id="authPane" layoutX="6.0" layoutY="64.0" prefHeight="400.0" prefWidth="207.0">
         <!-- First row -->
         <TextField fx:id="login" layoutX="4.0" layoutY="123.0" prefHeight="30.0" prefWidth="200.0" promptText="Логин" style="-fx-border-color: #000080; -fx-background-color: #000000;" />
         <PasswordField fx:id="password" layoutX="4.0" layoutY="153.0" prefHeight="30.0" prefWidth="200.0" promptText="Пароль" style="-fx-background-color: #000000; -fx-border-color: #000080;" />

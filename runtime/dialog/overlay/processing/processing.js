@@ -106,7 +106,7 @@ function makeAuthRequest(login, rsaPassword, callback) {
     var task = rsaPassword === null ? newTask(offlineAuthRequest(login)) :
         newRequestTask(new AuthRequest(login, rsaPassword));
     processing.setTaskProperties(task, callback, null, true);
-    task.updateMessage("Авторизация на сервере");
+    task.updateMessage("Авторизация на серверах SapphireLife");
     startTask(task);
 }
 
@@ -114,6 +114,6 @@ function launchClient(jvmDir, jvmHDir, assetHDir, clientHDir, profile, params, c
     var task = newTask(function() ClientLauncher.launch(jvmDir, jvmHDir, assetHDir, clientHDir,
         profile, params, LogHelper.isDebugEnabled()));
     processing.setTaskProperties(task, callback, null, true);
-    task.updateMessage("Запуск выбранного клиента");
+    task.updateMessage("Запуск клиента");
     startTask(task);
 }

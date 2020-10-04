@@ -42,7 +42,7 @@ function initAuthPane(pane) {
     passwordField.setOnAction(goAuth);
     if (settings.rsaPassword !== null) {
         passwordField.getStyleClass().add("hasSaved");
-        passwordField.setPromptText("*** Сохранённый ***");
+        passwordField.setPromptText("$ Пароль сохранён");
     }
 
     // Lookup profiles combobox
@@ -57,7 +57,7 @@ function initAuthPane(pane) {
     // Lookup hyperlink text and actions
     var link = pane.lookup("#link");
     link.setText(config.linkText);
-    link.setOnAction(function(event) app.getHostServices().showDocument(config.linkURL.toURI()));
+	link.setOnAction(function(event) news.getEngine().load("http://sapphirelife.ru/lost-password/"));
 
     // Lookup action buttons
     pane.lookup("#goAuth").setOnAction(goAuth);
@@ -171,14 +171,14 @@ function doUpdate(profile, pp, accessToken) {
     var digest = profile.object.isUpdateFastCheck();
 
     // Update JVM dir
-    update.resetOverlay("Обновление файлов JVM");
+    update.resetOverlay("Обновление виртуальной машины");
     overlay.swap(0, update.overlay, function(event) {
         var jvmDir = settings.updatesDir.resolve(jvmDirName);
         makeUpdateRequest(jvmDirName, jvmDir, null, digest, function(jvmHDir) {
             settings.lastHDirs.put(jvmDirName, jvmHDir);
 
             // Update asset dir
-            update.resetOverlay("Обновление файлов ресурсов");
+            update.resetOverlay("Обновление ресурсов игры");
             var assetDirName = profile.object.block.getEntryValue("assetDir", StringConfigEntryClass);
             var assetDir = settings.updatesDir.resolve(assetDirName);
             var assetMatcher = profile.object.getAssetUpdateMatcher();
@@ -186,7 +186,7 @@ function doUpdate(profile, pp, accessToken) {
                 settings.lastHDirs.put(assetDirName, assetHDir);
 
                 // Update client dir
-                update.resetOverlay("Обновление файлов клиента");
+                update.resetOverlay("Обновление ресурсов клиента");
                 var clientDirName = profile.object.block.getEntryValue("dir", StringConfigEntryClass);
                 var clientDir = settings.updatesDir.resolve(clientDirName);
                 var clientMatcher = profile.object.getClientUpdateMatcher();
@@ -268,7 +268,7 @@ function pingServer(status, statusCircle, profile) {
     task.setOnSucceeded(function(event) {
         var result = task.getValue();
         var color = result.isOverfilled() ? javafx.scene.paint.Color.YELLOW : javafx.scene.paint.Color.GREEN;
-        setServerStatus(status, statusCircle, color, java.lang.String.format("%d из %d", result.onlinePlayers, result.maxPlayers));
+        setServerStatus(status, statusCircle, color, java.lang.String.format("%d/%d", result.onlinePlayers, result.maxPlayers));
     });
     task.setOnFailed(function(event) setServerStatus(status, statusCircle, javafx.scene.paint.Color.RED, "Недоступен"));
     startTask(task);
@@ -312,8 +312,10 @@ var overlay = {
             dimPane.getChildren().add(newOverlay);
 
             // Fix overlay position
-            newOverlay.setLayoutX((dimPane.getPrefWidth() - newOverlay.getPrefWidth()) / 2.0);
-            newOverlay.setLayoutY((dimPane.getPrefHeight() - newOverlay.getPrefHeight()) / 2.0);
+            newOverlay.setLayoutX((dimPane.getWidth() - newOverlay.getWidth()) / 2.0);
+            newOverlay.setLayoutY((dimPane.getHeight() - newOverlay.getHeight()) / 2.0);
+			
+			// ГДЕ ТО ТУТ САБАКА ЗАРЫТА
 
             // Fade in
             fade(newOverlay, 0.0, 0.0, 1.0, onFinished);

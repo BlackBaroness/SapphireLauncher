@@ -94,7 +94,7 @@ function makeUpdateRequest(dirName, dir, matcher, digest, callback) {
 
     // Set task properties and start
     update.setTaskProperties(task, request, callback);
-    task.updateMessage("Состояние: Хеширование");
+    task.updateMessage("Состояние: проверка хеша");
     task.updateProgress(-1, -1);
     startTask(task);
 }

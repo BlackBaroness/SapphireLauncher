@@ -191,7 +191,7 @@ var settings = {
         // Lookup change dir button
         settings.overlay.lookup("#changeDir").setOnAction(function(event) {
             var chooser = new javafx.stage.DirectoryChooser();
-            chooser.setTitle("Сменить директорию загрузок");
+            chooser.setTitle("Сменить директорию лаунчере");
             chooser.setInitialDirectory(dir.toFile());
 
             // Set new result
@@ -207,7 +207,7 @@ var settings = {
         deleteDirButton.setOnAction(function(event) {
             if (!settings.deleteDirPressedAgain) {
                 settings.deleteDirPressedAgain = true;
-                deleteDirButton.setText("Подтвердить вменяемость");
+                deleteDirButton.setText("Вы уверены?");
                 return;
             }
 
