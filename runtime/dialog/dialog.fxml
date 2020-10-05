@@ -23,7 +23,7 @@
    </ImageView>
 
     <!-- News web view -->
-    <WebView fx:id="news" layoutX="218.0" opacity="0.64" prefHeight="549.0" prefWidth="782.0" />
+    <WebView fx:id="news" layoutX="218.0" opacity="0.65" prefHeight="549.0" prefWidth="782.0" />
 
     <!-- Auth pane -->
     <Pane fx:id="authPane" layoutX="6.0" layoutY="64.0" prefHeight="400.0" prefWidth="207.0">
@@ -41,4 +41,5 @@
 
     <!-- Overlay -->
     <Pane fx:id="dim" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" visible="false" />
+   <Button fx:id="left_panel" mnemonicParsing="false" prefHeight="549.0" prefWidth="219.0" text="Button" visible="false" />
 </Pane>

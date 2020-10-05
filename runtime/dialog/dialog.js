@@ -16,6 +16,8 @@ function initDialog() {
     // Lookup auth pane and dim
     initAuthPane(rootPane.lookup("#authPane"));
     dimPane = rootPane.lookup("#dim");
+	
+	rootPane.lookup("#left_panel").setOnAction()
 
     // Init overlays
     debug.initOverlay();
@@ -57,11 +59,26 @@ function initAuthPane(pane) {
     // Lookup hyperlink text and actions
     var link = pane.lookup("#link");
     link.setText(config.linkText);
-	link.setOnAction(function(event) news.getEngine().load("http://sapphirelife.ru/lost-password/"));
-
+	link.setOnAction(restorePassword);
+	
     // Lookup action buttons
     pane.lookup("#goAuth").setOnAction(goAuth);
     pane.lookup("#goSettings").setOnAction(goSettings);
+}
+
+function setNewsNonActive(event) {
+	news.opacity = 0.65;
+}
+
+function setNewsActive(event) {
+	news.opacity = 0.75;
+}
+
+
+
+function restorePassword(event) {
+	// news.opacity = 0.75;
+	news.getEngine().load("http://sapphirelife.ru/lost-password/");
 }
 
 function initOffline() {
