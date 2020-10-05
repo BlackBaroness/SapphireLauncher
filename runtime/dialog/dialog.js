@@ -312,10 +312,8 @@ var overlay = {
             dimPane.getChildren().add(newOverlay);
 
             // Fix overlay position
-            newOverlay.setLayoutX((dimPane.getWidth() - newOverlay.getWidth()) / 2.0);
-            newOverlay.setLayoutY((dimPane.getHeight() - newOverlay.getHeight()) / 2.0);
-			
-			// ГДЕ ТО ТУТ САБАКА ЗАРЫТА
+            newOverlay.setLayoutX((dimPane.getWidth() / 2));
+            newOverlay.setLayoutY((dimPane.getHeight() / 2));
 
             // Fade in
             fade(newOverlay, 0.0, 0.0, 1.0, onFinished);
