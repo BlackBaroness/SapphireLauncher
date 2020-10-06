@@ -12,6 +12,7 @@ function initDialog() {
     var newsEngine = news.getEngine();
     newsEngine.setUserDataDirectory(dir.resolve("webview").toFile());
     newsEngine.load(config.newsURL);
+	news.setOnMouseClicked(setNewsActive);
 
     // Lookup auth pane and dim
     initAuthPane(rootPane.lookup("#authPane"));
@@ -63,7 +64,12 @@ function initAuthPane(pane) {
     pane.lookup("#goAuth").setOnAction(goAuth);
     pane.lookup("#goSettings").setOnAction(goSettings);
 
-	pane.lookup("#left_panel").setOnAction(restorePassword);
+	// НОН-актив
+	pane.lookup("#left_panel").setOnMouseClicked(setNewsNonActive);
+	loginField.setOnMouseClicked(setNewsNonActive);
+	passwordField.setOnMouseClicked(setNewsNonActive);
+	profilesBox.setOnMouseClicked(setNewsNonActive);
+	
 }
 
 function setNewsNonActive(event) {
@@ -71,11 +77,10 @@ function setNewsNonActive(event) {
 }
 
 function setNewsActive(event) {
-	news.opacity = 0.85;
+	news.opacity = 0.80;
 }
 
 function restorePassword(event) {
-	setNewsActive();
 	news.getEngine().load("http://sapphirelife.ru/lost-password/");
 }
 
