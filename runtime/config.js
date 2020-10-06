@@ -13,7 +13,7 @@ var config = {
     settingsMagic: 0xC0DE5, // Ancient magic, don't touch
     autoEnterDefault: true, // Should autoEnter be enabled by default?
     fullScreenDefault: false, // Should fullScreen be enabled by default?
-    ramDefault: 1024, // Default RAM amount (0 for auto)
+    ramDefault: 0, // Default RAM amount (0 for auto)
 
     // Custom JRE config (!!! DON'T CHANGE !!!)
     jvmMustdie32Dir: "jre-8u202-win32", jvmMustdie64Dir: "jre-8u202-win64",

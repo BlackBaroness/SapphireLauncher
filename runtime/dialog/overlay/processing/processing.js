@@ -52,7 +52,7 @@ var processing = {
 
 function offlineLauncherRequest() {
     if (settings.lastSign === null || settings.lastProfiles.isEmpty()) {
-        Request.requestError("Запуск в оффлайн-режиме невозможен");
+        Request.requestError("Что-то пошло не так. Включён offline-режим");
         return;
     }
 
@@ -98,7 +98,7 @@ function makeLauncherRequest(callback) {
         settings.offline = true;
         overlay.swap(2500, processing.overlay, function() makeLauncherRequest(callback));
     }, false);
-    task.updateMessage("Обновление списка серверов");
+    task.updateMessage("Синхронизация с серверами SapphireLife");
     startTask(task);
 }
 
@@ -106,7 +106,7 @@ function makeAuthRequest(login, rsaPassword, callback) {
     var task = rsaPassword === null ? newTask(offlineAuthRequest(login)) :
         newRequestTask(new AuthRequest(login, rsaPassword));
     processing.setTaskProperties(task, callback, null, true);
-    task.updateMessage("Авторизация на серверах SapphireLife");
+    task.updateMessage("Авторизация на сервере");
     startTask(task);
 }
 
@@ -114,6 +114,6 @@ function launchClient(jvmDir, jvmHDir, assetHDir, clientHDir, profile, params, c
     var task = newTask(function() ClientLauncher.launch(jvmDir, jvmHDir, assetHDir, clientHDir,
         profile, params, LogHelper.isDebugEnabled()));
     processing.setTaskProperties(task, callback, null, true);
-    task.updateMessage("Запуск клиента");
+    task.updateMessage("Запуск игры");
     startTask(task);
 }

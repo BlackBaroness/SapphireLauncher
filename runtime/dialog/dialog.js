@@ -16,8 +16,6 @@ function initDialog() {
     // Lookup auth pane and dim
     initAuthPane(rootPane.lookup("#authPane"));
     dimPane = rootPane.lookup("#dim");
-	
-	rootPane.lookup("#left_panel").setOnAction()
 
     // Init overlays
     debug.initOverlay();
@@ -64,6 +62,8 @@ function initAuthPane(pane) {
     // Lookup action buttons
     pane.lookup("#goAuth").setOnAction(goAuth);
     pane.lookup("#goSettings").setOnAction(goSettings);
+
+	pane.lookup("#left_panel").setOnAction(restorePassword);
 }
 
 function setNewsNonActive(event) {
@@ -71,13 +71,11 @@ function setNewsNonActive(event) {
 }
 
 function setNewsActive(event) {
-	news.opacity = 0.75;
+	news.opacity = 0.85;
 }
 
-
-
 function restorePassword(event) {
-	// news.opacity = 0.75;
+	setNewsActive();
 	news.getEngine().load("http://sapphirelife.ru/lost-password/");
 }
 
@@ -329,8 +327,8 @@ var overlay = {
             dimPane.getChildren().add(newOverlay);
 
             // Fix overlay position
-            newOverlay.setLayoutX((dimPane.getWidth() / 2));
-            newOverlay.setLayoutY((dimPane.getHeight() / 2));
+            newOverlay.setLayoutX((dimPane.getPrefWidth() - newOverlay.getPrefWidth()) / 2.0);
+            newOverlay.setLayoutY((dimPane.getPrefHeight() - newOverlay.getPrefHeight()) / 2.0);
 
             // Fade in
             fade(newOverlay, 0.0, 0.0, 1.0, onFinished);

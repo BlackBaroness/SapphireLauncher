@@ -9,6 +9,7 @@ var update = {
         update.title = update.overlay.lookup("#utitle");
         update.description = update.overlay.lookup("#description");
         update.progress = update.overlay.lookup("#progress");
+		update.overlay.lookup("#textFact").setText("Интересный факт: " + getRandomFact());
     },
 
     resetOverlay: function(title) {
@@ -94,7 +95,19 @@ function makeUpdateRequest(dirName, dir, matcher, digest, callback) {
 
     // Set task properties and start
     update.setTaskProperties(task, request, callback);
-    task.updateMessage("Состояние: проверка хеша");
+    task.updateMessage("Состояние: синхронизация с SapphireLife");
     task.updateProgress(-1, -1);
     startTask(task);
+}
+
+function getRandomFact() {
+  var num = Math.floor(Math.random() * (8 - 1 + 1)) + 1;
+  if (num == 1) return "если вы получите смертельный урон, вы умрёте";
+  if (num == 2) return "если Чёрная Баронесса ваша вайфу, вы действительно круты";
+  if (num == 3) return "я пишу это в 3 часа ночи, поскорее бы лечь спать";
+  if (num == 4) return "у SapphireLife раньше был Clanwar сервер";
+  if (num == 5) return "я так и не прошёл GTA: San Andreas";
+  if (num == 6) return "мир SapphireLife неотразим, но не стоит забывать отдыхать от него";
+  if (num == 7) return "Баронесса ненавидит грибы";
+  if (num == 8) return "Неспящие всё таки иногда спят";
 }

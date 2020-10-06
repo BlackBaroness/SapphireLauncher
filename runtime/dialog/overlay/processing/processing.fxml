@@ -6,16 +6,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="overlay" prefWidth="1000.0" prefHeight="400.0">
+<Pane fx:id="overlay" prefHeight="108.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
         <URL value="@processing.css" />
     </stylesheets>
 
     <!-- Icon image -->
-    <ImageView fx:id="spinner" layoutX="26.0" layoutY="26.0">
+    <ImageView fx:id="spinner" fitHeight="92.0" fitWidth="92.0" layoutX="8.0" layoutY="8.0">
         <Image url="@spinner.gif" />
     </ImageView>
 
     <!-- Description -->
-    <Label fx:id="description" layoutX="100.0" layoutY="10.0" prefWidth="290.0" prefHeight="80.0" text="..." />
+    <Label fx:id="description" layoutX="109.0" layoutY="12.0" prefHeight="85.0" prefWidth="355.0" text="..." textFill="WHITE" />
 </Pane>

@@ -36,6 +36,6 @@
 
 #layout > #dim > #overlay {
     -fx-opacity: 0.0;
-    -fx-background-color: white;
+    -fx-background-color: black;
     -fx-background-radius: 5px;
 }
